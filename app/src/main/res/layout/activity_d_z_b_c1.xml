@@ -1,0 +1,74 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+            android:id="@+id/caidan"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定制班车"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:layout_marginLeft="430dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="@mipmap/ditu"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="光谷金融界——南湖商厦"
+                android:textSize="40sp"
+                android:id="@+id/daolu"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:text="票价:￥8"
+                android:textSize="32sp"
+                android:id="@+id/piaojia"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="里程:8。0Km"
+                android:textSize="32sp"
+                android:id="@+id/licheng"/>
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:text="下一步"
+                android:textSize="32sp"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/xiayibu"
+                android:background="@drawable/bk1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
