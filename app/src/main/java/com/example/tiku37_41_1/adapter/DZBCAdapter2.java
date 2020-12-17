@@ -75,6 +75,6 @@ public class DZBCAdapter2 extends BaseAdapter {
                 }
             }
         });
-        return null;
+        return view;
     }
 }

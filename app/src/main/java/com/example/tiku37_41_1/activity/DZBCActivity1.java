@@ -74,7 +74,9 @@ public class DZBCActivity1 extends AppCompatActivity implements View.OnClickList
                 finish();
                 break;
             case R.id.xiayibu:
-                startActivity(new Intent(DZBCActivity1.this, DZBCActivity2.class));
+                Intent intent=new Intent(DZBCActivity1.this, DZBCActivity2.class);
+                intent.putExtra("index",index);
+                startActivity(intent);
                 break;
         }
     }

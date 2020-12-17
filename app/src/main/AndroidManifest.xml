@@ -10,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.DZBCActivity2"></activity>
+        <activity android:name=".activity.WDDDActivity"></activity>
+        <activity android:name=".activity.DZBCActivity4" />
+        <activity android:name=".activity.DZBCActivity3" />
+        <activity android:name=".activity.DZBCActivity2" />
         <activity android:name=".activity.DZBCActivity1" />
         <activity android:name=".activity.DZBCActivity" />
         <activity android:name=".activity.EWMTPActivity" />

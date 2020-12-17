@@ -12,6 +12,7 @@ import com.example.tiku37_41_1.AppClient;
 import com.example.tiku37_41_1.R;
 import com.example.tiku37_41_1.adapter.DZBCAdapter;
 import com.example.tiku37_41_1.bean.DZBC;
+import com.example.tiku37_41_1.bean.WDDD;
 import com.example.tiku37_41_1.net.OkHttpLo;
 import com.example.tiku37_41_1.net.OkHttpTo;
 
@@ -24,7 +25,7 @@ import java.util.List;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class DZBCActivity extends AppCompatActivity {
+public class DZBCActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ImageView caidan;
     private TextView wodedingdan;
@@ -41,6 +42,11 @@ public class DZBCActivity extends AppCompatActivity {
         appClient= (AppClient) getApplication();
         dzbcs=appClient.getDzbcs();
         huoqu();
+        dianji();
+    }
+
+    private void dianji() {
+        wodedingdan.setOnClickListener(this);
     }
 
     private void huoqu() {
@@ -95,5 +101,14 @@ public class DZBCActivity extends AppCompatActivity {
         caidan = (ImageView) findViewById(R.id.caidan);
         wodedingdan = (TextView) findViewById(R.id.wodedingdan);
         listView = (ListView) findViewById(R.id.list_view);
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.wodedingdan:
+                startActivity(new Intent(DZBCActivity.this, WDDDActivity.class));
+                break;
+        }
     }
 }

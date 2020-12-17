@@ -55,4 +55,15 @@ public class RL {
     public void setEnable(boolean enable) {
         this.enable = enable;
     }
+
+    @Override
+    public String toString() {
+        return "RL{" +
+                "solar='" + solar + '\'' +
+                ", lunar='" + lunar + '\'' +
+                ", bg=" + bg +
+                ", month=" + month +
+                ", enable=" + enable +
+                '}';
+    }
 }
