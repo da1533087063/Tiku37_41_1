@@ -14,6 +14,8 @@ public class RL {
         this.enable = enable;
     }
 
+
+
     public String getSolar() {
         return solar;
     }
