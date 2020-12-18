@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.WDDDActivity"></activity>
+        <activity android:name=".activity.XWMTActivity"></activity>
+        <activity android:name=".activity.WDDDActivity" />
         <activity android:name=".activity.DZBCActivity4" />
         <activity android:name=".activity.DZBCActivity3" />
         <activity android:name=".activity.DZBCActivity2" />
@@ -25,9 +26,9 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.VIBRATE" />
-
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
 
 </manifest>

@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.tiku37_41_1.activity.DZBCActivity;
 import com.example.tiku37_41_1.activity.EWMTPActivity;
+import com.example.tiku37_41_1.activity.XWMTActivity;
 import com.example.tiku37_41_1.adapter.SpinnerAdapter;
 
 import java.util.ArrayList;
@@ -62,6 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         final List<String>list=new ArrayList<>();
         list.add("");
         list.add("定制班车");
+        list.add("新闻媒体");
         listView.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,list));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -69,6 +71,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 switch (list.get(i)){
                     case "定制班车":
                         startActivity(new Intent(MainActivity.this, DZBCActivity.class));
+                        break;
+                    case "新闻媒体":
+                        startActivity(new Intent(MainActivity.this, XWMTActivity.class));
                         break;
                 }
             }
