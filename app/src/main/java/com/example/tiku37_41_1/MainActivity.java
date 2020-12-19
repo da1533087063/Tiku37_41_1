@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.tiku37_41_1.activity.DZBCActivity;
 import com.example.tiku37_41_1.activity.EWMTPActivity;
+import com.example.tiku37_41_1.activity.ICCZActivity;
 import com.example.tiku37_41_1.activity.XWMTActivity;
 import com.example.tiku37_41_1.adapter.SpinnerAdapter;
 
@@ -64,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         list.add("");
         list.add("定制班车");
         list.add("新闻媒体");
+        list.add("IC卡充值");
         listView.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,list));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -74,6 +76,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         break;
                     case "新闻媒体":
                         startActivity(new Intent(MainActivity.this, XWMTActivity.class));
+                        break;
+                    case "IC卡充值":
+                        startActivity(new Intent(MainActivity.this, ICCZActivity.class));
                         break;
                 }
             }
